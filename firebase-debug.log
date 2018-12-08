@@ -1,0 +1,24 @@
+[debug] [2018-12-08T11:42:43.440Z] ----------------------------------------------------------------------
+[debug] [2018-12-08T11:42:43.443Z] Command:       /Users/thanhphu/Code/nvm/versions/node/v10.3.0/bin/node /Users/thanhphu/Code/nvm/versions/node/v10.3.0/pnpm-global/1/node_modules/firebase-tools/lib/bin/firebase.js serve
+[debug] [2018-12-08T11:42:43.443Z] CLI Version:   6.1.2
+[debug] [2018-12-08T11:42:43.443Z] Platform:      darwin
+[debug] [2018-12-08T11:42:43.443Z] Node Version:  v10.11.0
+[debug] [2018-12-08T11:42:43.444Z] Time:          Sat Dec 08 2018 20:42:43 GMT+0900 (Korean Standard Time)
+[debug] [2018-12-08T11:42:43.444Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-08T11:42:43.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-08T11:42:43.455Z] > authorizing via signed-in user
+[debug] [2018-12-08T11:42:43.455Z] [iam] checking project rezi-v2 for permissions ["firebase.projects.get"]
+[debug] [2018-12-08T11:42:43.457Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/rezi-v2:testIamPermissions  
+
+[debug] [2018-12-08T11:42:44.356Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-08T11:42:44.358Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/rezi-v2  
+ 
+[debug] [2018-12-08T11:42:45.257Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/thanhphu/Code/resume-editor'...
+[info] 
+[debug] [2018-12-08T11:42:45.259Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1077188264301/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-08T11:42:45.871Z] <<< HTTP RESPONSE 200
+[info] ✔  hosting: Local server: http://localhost:5000
