@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 			type: "POST",
 			contentType: "application/json",
 			data: JSON.stringify({resume: data}, null, "  "),
-			url: "http://themes.jsonresume.org/" + theme,
+			url: "https://themes.jsonresume.org/" + theme,
 			success: function(html) {
 				iframe.contents().find("body").html(html);
 				preview.removeClass("loading");
