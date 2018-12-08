@@ -1,5 +1,6 @@
 // Global by intention.
 var builder;
+var rootUrl = "https://themes.jsonresume.org/";
 
 jQuery(document).ready(function($) {
 	var form = $("#form");
@@ -36,7 +37,7 @@ jQuery(document).ready(function($) {
 			type: "POST",
 			contentType: "application/json",
 			data: JSON.stringify({resume: data}, null, "  "),
-			url: "https://themes.jsonresume.org/" + theme,
+			url: rootUrl + theme,
 			success: function(html) {
 				iframe.contents().find("body").html(html);
 				preview.removeClass("loading");
@@ -82,7 +83,7 @@ jQuery(document).ready(function($) {
 	(function getThemes() {
 		var list = $("#themes-list");
 		var item = list.find(".item").remove();
-		$.getJSON("http://themes.jsonresume.org/themes.json", function(json) {
+		$.getJSON(rootUrl + "/themes.json", function(json) {
 			var themes = json.themes;
 			if (!themes) {
 				return;
